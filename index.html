@@ -1,203 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/c756782eb6.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c756782eb6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
 <body>
   <!--Instagram logo-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="fa-brands fa-instagram mr-1"></i>
-            <span>Instagram</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-center">  
-                    
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                Create a New Post
-              </button>  
-    
-                <!--Create new post button-->    
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <label for="msgbox">Message</label>
-                      <textarea class="form-control" id="floatingTextarea"placeholder="Add the caption of your post here" style="height: 100px"></textarea>
-                    <div>
-                    <i class="fas fa-camera fa-2x"></i>
-                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                    </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">Publish</button>
-                    </div>
-                  </div>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <a class="navbar-brand d-flex align-items-center">
+      <div class="d-flex w-100 justify-content-center">
+        <i class="fa-brands fa-instagram mr-1"></i>
+        <span>Instagram</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav align-items-center">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+          Create a New Post
+        </button>
+        <!--Create new post button-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <label for="msgbox">Message</label>
+                <textarea class="form-control" id="floatingTextarea" placeholder="Add the caption of your post here"
+                  style="height: 100px"></textarea>
+                <div>
+                  <i class="fas fa-camera fa-2x"></i>
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
                 </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
             </div>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                   <i class="fas fa-cog"></i>
-                </a>
-                <!--Log in/Log out button-->
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log Out</a>          
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
-    </nav>
-      <!--Pills grid-->
-      <div class="d-flex w-100 justify-content-center">
-        <ul class="nav nav-pills" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-square"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-th"></i></a>
-            </li>
-        </ul>
-      </div>
-      <!--Photo as post-->
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container p-3 mb-2 bg-light text-dark">
-                <h1></h1>
-              <div class="row justify-content-center p-3">
-                  <div class="col-sm-12 col-md-8 col-lg-6">
-                      <div class="card" styles="">
-                            <div>
-                                <div class="d-flex justify-content-between">
-                                    <div><b>Lidi Villarreal</b><br> Puerto Vallarta, Mexico</div>
-                                    <div>13/15</div>
-                                </div>
-                            </div>
-                            <img src="https://ca-times.brightspotcdn.com/dims4/default/4fd3716/2147483647/strip/true/crop/2784x3992+0+0/resize/1200x1721!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F71%2Fd0%2F5c10ddbe4f59b1bbcebadb623509%2Fshrimp-abalone-cocktail-933259-sd-fo-mariscos-ec-016x-copy.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h6 class="card-title">50 likes</h6>
-                            <p class="card-text">Los mejores mariscos de Puerto Vallarta</p>
-                            <div class="d-flex justify-content-between">
-                                <div><i class="far fa-heart"></i>
-                                </div>
-                                <div>
-                                  <i class="fas fa-ellipsis-v"></i>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cog"></i>
+          </a>
+          <!--Log in/Log out button-->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out</a>
           </div>
-          <div class="row justify-content-center p-3">
-            <div class="col-sm-12 col-md-8 col-lg-6">
-                <div class="card" styles="">
-                    <div>
-                      <div class="d-flex justify-content-between">
-                        <div><b>Lidi Villarreal</b><br>Yucatan, Mexico</div>
-                        <div>1/12</div>
-                    </div>
-                </div>
-                <img src="https://travellersworldwide.com/wp-content/uploads/2022/05/shutterstock_2121833024.png.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title">1,344likes</h6>
-                    <p class="card-text">Awesome place to visit! </p>
-                    <div class="d-flex justify-content-between">
-                        <div><i class="far fa-heart"></i>
-                        </div>
-                        <div>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center p-3">
-            <div class="col-sm-12 col-md-8 col-lg-6">
-                <div class="card" styles="">
-                    <div>
-                      <div class="d-flex justify-content-between">
-                        <div><b>Lidice Villarreal</b><br>Sioux Falls, South Dakota</div>
-                        <div>2/10</div>
-                    </div>
-                </div>
-                <img src="https://www.worldatlas.com/upload/10/cb/a2/shutterstock-1140727271.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title">10 likes</h6>
-                    <p class="card-text">The Falls of Sioux Falls.... </p>
-                    <div class="d-flex justify-content-between">
-                        <div><i class="far fa-heart"></i>
-                        </div>
-                        <div>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Pill-->
-          
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="container-fluid p-3">
-              <div class="row no-gutters mb-2 p-3">
-                <div class="col-sm p-2">
-                <img src="https://sonosuite.com/wp-content/uploads/2020/12/conciertos-en-live-stream.jpg" class="card-img-top img-fluid" alt="...">
-                </div>
-                <div class="col-sm p-2">
-                <img src="https://images.nycgo.com/image/fetch/q_auto:best,c_fill,f_auto,w_900,h_600,g_center/https://www.nycgo.com//images/photo_gallery/bridges/05_QueensboroBridge_WesTarca_5927.jpg" class="card-img-top img-fluid" alt="...">
-                </div>
-                <div class="col-sm p-2">
-                <img src="https://floridahikes.com/wp-content/uploads/2016/10/Oleta-River-Miami.jpg" class="card-img-top img-fluid" alt="...">
-                </div>
-              </div>
-              
-                <div class="row no-gutters mb-2 p-3">
-                  <div class="col-sm p-2">
-                <img src="https://static.barcelo.com/content/dam/bpt/posts/2022/04/donde-ir-en-semana-santa-aventurera-1170x781.jpg.bhgimg.jpg/1656413702380.jpg" class="card-img-top img-fluid" alt="...">
-                </div>
-                <div class="col-sm p-2">
-                <img src="https://lp-cms-production.imgix.net/2021-11/shutterstockRF_552773971.jpg" class="card-img-top img-fluid" alt="...">
-                </div>
-                <div class="col-sm p-2">
-                <img src="https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/que-hacer_aventura-y-deporte_canopy_3.jpg" class="card-img-top img-fluid" alt="...">
-                </div>
-                </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
 
-                <div class="row no-gutters mb-2 p-3">
-                <div class="col-sm p-2">
-                <img src="https://photomkt.com/wp-content/uploads/2019/11/Blog-FullFrame-Photomkt-Impacto-De-La-Fotografia-En-Blanco-Y-Negro-4.jpg" class="card-img-top img-fluid" alt="...">
+
+
+
+
+
+
+
+  <!--Pills grid-->
+  <div class="d-flex w-100 justify-content-center">
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" 
+        id="pills-home-tab" 
+        data-toggle="pill" 
+        href="#pills-home" 
+        role="tab" 
+        aria-controls="pills-home"
+        aria-selected="true"><i class="fas fa-square"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" 
+        id="pills=profile-tab" 
+        data-toggle="pill" 
+        href="#pills-profile" 
+        role="tab" 
+        aria-controls="pills-profile"
+        aria-selected="false"><i class="fas fa-th"></i></a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+  <!--Photo as post-->
+  <div class="tab-content" id="myTabContent">
+
+
+    <div class="tab-pane fade show active" 
+    id="pills-home" 
+    role="tabpanel" 
+    aria-labelledby="pills-home-tab">
+
+    <div
+    class="tab-pane fade show active"
+    id="home"
+    role="tabpanel"
+    aria-labelledby="home-tab">
+
+
+      <div class="container p-3 mb-2 text-dark">
+        <h1></h1>
+        <div class="row justify-content-center p-3">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="card" styles="">
+              <div>
+                <div class="d-flex justify-content-between p-2">
+                  <div><b>Lidi Villarreal</b><br> Puerto Vallarta, Mexico</div>
+                  <div>13/15</div>
                 </div>
-                <div class="col-sm p-2">
-                <img src="https://processingraw.com/wp-content/uploads/2017/01/Capa-de-ajuste-de-Blanco-y-negro-en-photoshop-selectivo-3.jpg" class="card-img-top img-fluid" alt="...">
+              </div>
+              <img
+                src="https://ca-times.brightspotcdn.com/dims4/default/4fd3716/2147483647/strip/true/crop/2784x3992+0+0/resize/1200x1721!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F71%2Fd0%2F5c10ddbe4f59b1bbcebadb623509%2Fshrimp-abalone-cocktail-933259-sd-fo-mariscos-ec-016x-copy.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">50 likes</h6>
+                <p class="card-text">Los mejores mariscos de Puerto Vallarta</p>
+                <div class="d-flex justify-content-between">
+                  <div><i class="far fa-heart"></i>
+                  </div>
+                  <div>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
                 </div>
-                <div class="col-sm p-2">
-                <img src="https://mott.pe/noticias/wp-content/uploads/2018/03/5-razones-por-las-que-debes-hacer-fotograf%C3%ADas-en-blanco-y-negro-portada1.jpg" class="card-img-top img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center p-3">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="card" styles="">
+              <div>
+                <div class="d-flex justify-content-between p-2">
+                  <div><b>Lidi Villarreal</b><br>Yucatan, Mexico</div>
+                  <div>1/12</div>
                 </div>
+              </div>
+              <img src="https://travellersworldwide.com/wp-content/uploads/2022/05/shutterstock_2121833024.png.webp"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">1,344likes</h6>
+                <p class="card-text">Awesome place to visit! </p>
+                <div class="d-flex justify-content-between">
+                  <div><i class="far fa-heart"></i>
+                  </div>
+                  <div>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
                 </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center p-3">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="card" styles="">
+              <div>
+                <div class="d-flex justify-content-between p-2">
+                  <div><b>Lidice Villarreal</b><br>Sioux Falls, South Dakota</div>
+                  <div>2/10</div>
+                </div>
+              </div>
+              <img src="https://www.worldatlas.com/upload/10/cb/a2/shutterstock-1140727271.jpg" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h6 class="card-title">10 likes</h6>
+                <p class="card-text">The Falls of Sioux Falls.... </p>
+                <div class="d-flex justify-content-between">
+                  <div><i class="far fa-heart"></i>
+                  </div>
+                  <div>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+        <!--End IG feed-->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pils-profile-tab">
+          <div class="container-fluid p-2">
+            <div class="row no-gutters mb-2 ">
+              <div class="col-sm p-2">
+                <img src="https://sonosuite.com/wp-content/uploads/2020/12/conciertos-en-live-stream.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+              <div class="col-sm p-2">
+                <img
+                  src="https://images.nycgo.com/image/fetch/q_auto:best,c_fill,f_auto,w_900,h_600,g_center/https://www.nycgo.com//images/photo_gallery/bridges/05_QueensboroBridge_WesTarca_5927.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+              <div class="col-sm p-2">
+                <img src="https://floridahikes.com/wp-content/uploads/2016/10/Oleta-River-Miami.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="row no-gutters mb-2">
+              <div class="col-sm p-2">
+                <img
+                  src="https://static.barcelo.com/content/dam/bpt/posts/2022/04/donde-ir-en-semana-santa-aventurera-1170x781.jpg.bhgimg.jpg/1656413702380.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+              <div class="col-sm p-2">
+                <img src="https://lp-cms-production.imgix.net/2021-11/shutterstockRF_552773971.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+              <div class="col-sm p-2">
+                <img
+                  src="https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/que-hacer_aventura-y-deporte_canopy_3.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="row no-gutters mb-2 ">
+              <div class="col-sm p-2">
+                <img
+                  src="https://photomkt.com/wp-content/uploads/2019/11/Blog-FullFrame-Photomkt-Impacto-De-La-Fotografia-En-Blanco-Y-Negro-4.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+              <div class="col-sm p-2">
+                <img
+                  src="https://processingraw.com/wp-content/uploads/2017/01/Capa-de-ajuste-de-Blanco-y-negro-en-photoshop-selectivo-3.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+              <div class="col-sm p-2">
+                <img
+                  src="https://mott.pe/noticias/wp-content/uploads/2018/03/5-razones-por-las-que-debes-hacer-fotograf%C3%ADas-en-blanco-y-negro-portada1.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+
+  <!--end-->
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
